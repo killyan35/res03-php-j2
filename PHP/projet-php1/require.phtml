@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Formulaire
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="form">
+        <main>
+            <form method="post" action="index.php">
+               <section>
+                    <h3>
+                        Informations
+                    </h3>
+                    <div>
+                        <?php require './info.phtml'; ?>
+                    </div>
+                    <h4>
+                        Langues
+                    </h4>
+                        <?php require './langues.phtml'; ?>
+                </section>
+                <section>
+                    <h3>
+                        Compétences
+                    </h3>
+                    <h4>
+                        Langages de Programmation
+                    </h4>
+                        <?php require './langues.phtml'; ?>
+                    
+                    <h4>
+                        Frameworks & Librairies
+                    </h4>
+                        <?php require './Frameworks.phtml'; ?>
+                    <h4>
+                        Logiciels
+                    </h4>
+                        <?php require './Logiciels.phtml'; ?>
+                    <h4>
+                        Couleur du CV
+                    </h4>
+                        <?php require './Couleur.phtml'; ?>
+                </section>
+                <input type="submit" value="Envoyer" />
+            </form>
+        </main>
+    </body>
+</html>
